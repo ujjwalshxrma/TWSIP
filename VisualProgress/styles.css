@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Frijole&family=Gilda+Display&family=Varela+Round&display=swap');
+header {
+    background-color: #6b3167;
+    color: #eabcd8;
+    padding: 9px;
+}
+
+body {
+    background: linear-gradient(to bottom, #2b2fff, #d408ac);
+    margin: 0;
+    padding: 0;
+    font-family: 'Varela Round', sans-serif;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #6b3167;
+    color: #eabcd8;
+    padding: 23px;
+    text-align:center;
+}
+.txt2{
+    padding-top: 20px;
+}
+
+
+/* Media query for screens with a width of 768px or larger */
+@media screen and (min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav {
+        margin-top: 0;
+    }
+    nav ul{
+        display: flex;
+        align-items: center;
+        list-style-type:none;
+        font-family: 'Varela Round', sans-serif;
+        height: 121px;
+        background-color: rgb(22 22 23 / 80%);
+        backdrop-filter: blur(20px);
+        color: rgb(123, 64, 186);
+        padding: 0px;
+    }
+}
+
+/* Media query for screens with a width of 992px or larger */
+@media screen and (min-width: 992px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+.brand{
+  margin-left: 60rem;
+  width: 79rem;
+  align-items: center;
+  padding-top: 10px;
+}
+.bramd img{
+    size: 45rem;
+}
+.head1{
+    color:rgb(250, 247, 247);
+    font-size: 3rem;
+    font-family: 'Frijole', cursive;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+    left: 574px;
+}
+
+#imagecanvas{
+   border: 2px solid #ffa963;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+#applyFilter{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #eae0e8, #ff81e8);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    background-color: #e0e0e0;
+    color: #5a5555;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    font-family: 'Gilda Display', serif;
+}
+#resetImage{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #e0d0dd, #ff81e8);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    background-color: #e0e0e0;
+    color: #5a5555;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    font-family: 'Gilda Display', serif;
+}
+
+.txt{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    color: #e0d0dd;
+    font:bold;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 39px;
+    transition: color 0.3s ease;
+    position: absolute;
+    left: 72px;
+    bottom: 39px;
+}
+
+nav a span {
+    color: #e5db2a;
+}
+
+nav a:hover {
+    color: #e2dd73;
+}
+
+nav a:hover span {
+    color: white;
+}
+.logo-container img{
+    width: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+}
+.logo-container{
+    padding-right: 125rem;
+    
+}
+
+.textbox, .txt {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    background-color:transparent;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.hss, textarea {
+    width: 27%;
+    padding: 4px;
+    margin-top: 3px;
+    border: 1px solid #ddd;
+    border-radius: 33px;
+}
+
+.hss {
+    resize: none;
+    height: 49px;
+}
+.form{
+    color: white;
+}
+
+.form, .mess {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.mssg, textarea{
+    width: 27%;
+    padding: 53px;
+    margin-top: 3px;
+    border: 1px solid #ddd;
+    border-radius: 33px;
+}
+
+.button, .buttons {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.buttons {
+    background-color: #27ae60;
+}
+
+.button:hover, .buttons:hover {
+    background-color: #2980b9;
+}
+
+.txt3{
+    color:rgb(250, 247, 247);
+    font-size: 3rem;
+    font-family: 'Frijole', cursive;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+    left: 8px;
+    padding-top: 125px;
+    padding-bottom: 0px;
+}
+
