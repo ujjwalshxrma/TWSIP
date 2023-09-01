@@ -1,0 +1,493 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Frijole&family=Gilda+Display&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Frijole&family=Gilda+Display&family=Phudu&family=Varela+Round&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap");
+body {
+  background:#F8ECDB;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+nav {
+  font-family: 'Varela Round', sans-serif;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  height: 65px;
+  justify-content:space-evenly;
+  background-color: tranceparent;
+  color: black;
+  padding-top: 94px;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 25px;
+  font: bolder;
+}
+}
+@media screen and (min-width: 992px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+.logo img{
+    width: 350px;
+    position: absolute;
+    left: 12px;
+    top: 7px;
+}
+
+.nav-items{
+    display: flex;
+    gap: 2rem;
+    padding: 0 4rem;
+}
+
+.nav-items div{
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.nav-items div a{
+    color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav-items div:hover{
+    transition:0.8s;
+    font-weight: bold;
+}
+
+.Portfolio img{
+    padding-top: 208px;
+    padding-left: 472px;
+    width: 75%;
+}
+
+.My img{
+   width: 500px;
+    position: absolute;
+    top: 320px;
+    left: 40px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 15, 7, 2.2);
+    margin: 20px;
+}
+.txt{
+    position: absolute;
+    left: 67rem;
+    top: 25rem;
+    font-family:'Varela Round', sans-serif;
+    text-shadow: 3px 3px 8px rgba(0, 15, 7,0.5);
+}
+.txt {
+    font-size: 36px;
+    text-align: center;
+    opacity: 0; 
+    padding-right: 526px;
+    padding-top: 94px;
+}
+
+/* Define the animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Apply the animation to the heading */
+.txt {
+    animation: fadeIn 4s ease-in-out forwards; /* 2 seconds duration */
+}
+
+.head1{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 5.5rem;
+    padding-left: 1rem;
+    padding-top: 100px;
+    animation: scaleAnimation 2s linear infinite;
+}
+
+.hhh{
+   font-size: 5.5rem;
+   font-family: 'Varela Round', sans-serif;
+   padding-top: 150px;
+   justify-content:center ;
+   padding-left: 59rem;
+   animation: scaleAnimation 2s linear infinite;
+}
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.img1{
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+    gap: 9rem;
+}
+.img2{
+    display:flex;
+    justify-content: center;
+    gap:9rem;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+}
+.img3{
+    display: flex;
+    justify-content: center;
+    gap:9rem;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+}
+.img4{
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+}
+.xt{
+    font-size: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+}
+.btn-pink{
+    background-color: var(--bgOrange);
+    width: fit-content;
+    color: rgb(25, 24, 24);
+    padding: 0.8rem 2.3rem;
+    box-shadow: 5px 5px 7px 0px #0000003f;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-weight: 500;
+    border: solid 3px transparent;
+    position: absolute;
+    left: 59%;
+    top: 68%;
+    z-index: 1;
+    font-family:'Varela Round', sans-serif;
+    font-size: 25px;
+}
+
+.btn-pink::before{
+    content: "";
+    position: absolute;
+    background-color: #e6852a;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.8s;
+}
+
+.btn-pink:hover::before{
+    transform: scaleX(1);
+}
+
+.btn-pink:hover{
+    border: solid 3px var(--bgOrange);
+    color: rgb(246, 242, 242);
+}
+.project-section{
+    background-color: rgb(231, 231, 231);
+    margin: 4rem;
+}
+
+.page-header{
+    color:var(--bgOrange);
+    font-size: 90px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.project-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+.project-card{
+    width: 90%;
+    height: 550px;
+    background-image: url(./projects/NikeAir.png);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    position: relative;
+    box-shadow: 0px 0px 40px #1f1f1f;
+}
+
+.project-card::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #8582829a;
+    z-index: 0;
+    /* transform: scaleX(1); */
+}
+.project-card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(45deg, #343d68, #343d68be, #343d687c);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.4s;
+    z-index: 1;
+}
+
+.project-card:hover::before{
+    transform: scaleX(1);
+}
+
+.project-number{
+    position: absolute;
+    font-size: 200px;
+    font-weight: 600;
+    color: white;
+    z-index: 10;
+    display: none;
+}
+
+.project-card:hover .project-number{
+    display: block;
+}
+
+.project-number-right{
+    right: -40px;
+    top: -45px;
+}
+
+.project-number-left{
+    left: -40px;
+    top: -45px;
+}
+
+.project-content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    padding: 2em;
+    bottom: 20%;
+    z-index: 5;
+    gap: 1em;
+    transition: all 0.4s;
+}
+
+.project-content-left{
+    left: 10%;
+}
+
+.project-content-right{
+    right: 5%;
+}
+
+.project-skills-container{
+    width: 60%;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.project-skill{
+    width: 40px;
+}
+
+.project-heading{
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 3rem;
+}
+
+.project-subheading{
+    width: 70%;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.btn-grp{
+    display: flex;
+    gap: 0.9rem;
+    align-items: center;
+}
+
+.btn-project:hover{
+    border: none;
+}
+
+.icon{
+    cursor: pointer;
+    color: white;
+    font-size: 35px;
+    transition: all 0.4s;
+}
+
+.icon:hover{
+    color: var(--bgOrange);
+}
+
+.project-card:hover .project-content{
+    transform: scale(1.1);
+}
+
+#project1{
+    background-image: url(./projects/NikeAir.png);
+}
+
+#project2{
+    margin-left: 120px;
+    background-image: url(./projects/spotify.png);
+}
+
+#project3{
+    background-image: url(./projects/Passion.png);
+}
+.Certification{
+    font-size: 5rem;
+   font-family: 'Varela Round', sans-serif;
+   padding-top: 150px;
+   justify-content:center ;
+   padding-left: 59rem;
+   animation: scaleAnimation 2s linear infinite;
+}
+.contact-section {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #F8ECDB;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+}
+
+.contact-section h2 {
+    margin-bottom: 20px;
+    color: #151414;
+}
+
+.contact-section form {
+    text-align: left;
+}
+
+.contact-section label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.contact-section input[type="text"],
+.contact-section input[type="email"],
+.contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-section button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-section button:hover {
+    background-color: #0056b3;
+}
+
+footer{
+    position: relative;
+    margin-top: -1px;
+  background-color: #434343;
+  font-family: 'Varela Round', sans-serif;
+    padding: 5rem;
+    width: 101rem;
+}
+
+.footer-wrapper{
+    display: flex;
+    padding: 1.2rem;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-faded-text{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #e0e2ed;
+    user-select: none;
+    font-size: 5em;
+}
+
+.link-wrapper{
+    display: flex;
+    gap: 1.2rem;
+}
+
+.link-wrapper div a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.6s;
+}
+
+.link-wrapper div a:hover{
+    color: var(--bgOrange);
+    text-decoration: none;
+}
+
+.icon-wrapper{
+    display: flex;
+    gap: 1rem;
+}
